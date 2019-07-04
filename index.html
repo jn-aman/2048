@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
+
+
+
  <head>
+<style type="text/css">
+  
+#canvas {
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    position:fixed;
+}
+
+
+</style>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -24,7 +41,10 @@
   <center>
   <a style="cursor: pointer; " onclick="return load();">New Game</a>
   <br>
-  <div id="canvas"></div> 
+  <div id="canvas">
+    
+    
+  </div> 
   <h2>Score : <div style="display:inline;" id="score"></div></h2>
   <b>HOW TO PLAY:</b> Use your arrow keys to move the tiles.
   </center>
